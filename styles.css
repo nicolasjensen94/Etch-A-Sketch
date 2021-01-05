@@ -1,0 +1,23 @@
+:root {
+  --grid-cols: 1;
+  --grid-rows: 1;
+}
+
+#container {
+  padding-left: 32em;
+  padding-top: 5em;
+  padding-bottom: 5em;
+  display: grid;
+  grid-gap: 0.05em;
+  grid-template-rows: repeat(var(--grid-rows), 50px);
+  grid-template-columns: repeat(var(--grid-cols), 50px);
+  background-color: rgb(230, 192, 182);
+}
+
+.griditem {
+  padding: 1em;
+  border: 1px solid #ddd;
+  text-align: center;
+  background-color: rgb(9, 9, 172);
+}
+
