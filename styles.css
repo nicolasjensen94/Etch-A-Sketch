@@ -1,23 +1,40 @@
 :root {
-  --grid-cols: 1;
-  --grid-rows: 1;
+  --content-width: 600px;
+}
+
+body {
+  background-color: rgb(17, 17, 16);
+  margin: 30px auto;
 }
 
 #container {
-  padding-left: 32em;
-  padding-top: 5em;
-  padding-bottom: 5em;
   display: grid;
-  grid-gap: 0.05em;
-  grid-template-rows: repeat(var(--grid-rows), 50px);
-  grid-template-columns: repeat(var(--grid-cols), 50px);
-  background-color: rgb(230, 192, 182);
+  grid-gap: 0.05em;  
+  width: 75vw;
+  height: 75vw;
+  position: absolute;
+  margin: 30px auto;
+  max-height: var(--content-width);
+  max-width: var(--content-width);
+  padding-left: 640px ;
 }
 
 .griditem {
-  padding: 1em;
-  border: 1px solid #ddd;
+  border: 0.5px solid #ddd;
   text-align: center;
   background-color: rgb(9, 9, 172);
+}
+
+.clearButton{
+  margin: auto;
+  width: 125.406px;
+  height: 34px;
+  margin-left: 810px ;
+}
+
+.newgridButton{
+  margin: auto;
+  width: 125.406px;
+  height: 34px;
 }
 
